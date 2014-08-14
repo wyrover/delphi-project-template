@@ -51,9 +51,9 @@
         <DCC_Namespace>Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;System;Xml;Data;Datasnap;Web;Soap;Winapi;Xml.Win;System.Win;$(DCC_Namespace)</DCC_Namespace>
         <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
         <VerInfo_Locale>2052</VerInfo_Locale>
-        <DCC_UnitSearchPath>..\3rdparty\fastmm;..\..\3rdparty\TraceTool;..\3rdparty\igdiplus;..\3rdparty\InetSuite;..\3rdparty\synalist;..\3rdparty\GDIPlus;..\3rdparty\SQLite;..\3rdparty\RegularExpressions;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
-        <DCC_ExeOutput>..\bin</DCC_ExeOutput>
-        <DCC_DcuOutput>..\tmp</DCC_DcuOutput>
+        <DCC_UnitSearchPath>..\..\3rdparty\TraceTool;..\..\3rdparty\virtual-treeview\Source;..\..\3rdparty\WebBrowser;..\..\3rdparty\SQLite;..\..\3rdparty\RegularExpressions;..\..\3rdparty\EmbeddedWB\Source;..\..\3rdparty\ro;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+        <DCC_ExeOutput>..\..\bin</DCC_ExeOutput>
+        <DCC_DcuOutput>..\..\tmp</DCC_DcuOutput>
         <DCC_DependencyCheckOutputName>..\bin\planes.exe</DCC_DependencyCheckOutputName>
         <DCC_ImageBase>00400000</DCC_ImageBase>
         <DCC_Platform>x86</DCC_Platform>
@@ -64,10 +64,7 @@
         <DCC_K>false</DCC_K>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Base_Win32)'!=''">
-        <DCC_UnitSearchPath>..\3rdparty\virtual-treeview\Source;..\3rdparty\WebBrowser;..\3rdparty\EmbeddedWB\Source;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
         <DCC_Namespace>Data.Win;Datasnap.Win;Web.Win;Soap.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
-        <Icon_MainIcon>$(BDS)\bin\delphi_PROJECTICON.ico</Icon_MainIcon>
-        <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
         <VerInfo_Locale>1033</VerInfo_Locale>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
     </PropertyGroup>
@@ -102,21 +99,10 @@
         <DCCReference Include="fmMain.pas">
             <Form>MainForm</Form>
         </DCCReference>
-        <DCCReference Include="..\publish\roShell.pas"/>
-        <DCCReference Include="..\publish\roDateTime.pas"/>
-        <DCCReference Include="..\publish\roStrings.pas"/>
-        <DCCReference Include="..\publish\roFiles.pas"/>
-        <DCCReference Include="..\publish\roGraph.pas"/>
-        <DCCReference Include="..\publish\roUtils.pas"/>
-        <DCCReference Include="..\publish\roZLibEx.pas"/>
-        <DCCReference Include="..\publish\roIni.pas"/>
         <DCCReference Include="fmDemo1.pas">
             <Form>Demo1Form</Form>
         </DCCReference>
         <DCCReference Include="demoFactory.pas"/>
-        <DCCReference Include="GDIplus\fmRotateFlip01.pas">
-            <Form>FormRotateFlip01</Form>
-        </DCCReference>
         <DCCReference Include="appUtils.pas"/>
         <DCCReference Include="fmExcel.pas">
             <Form>Form1</Form>
@@ -127,7 +113,6 @@
         <DCCReference Include="fmDemo3.pas">
             <Form>Demo3Form</Form>
         </DCCReference>
-        <DCCReference Include="..\publish\roAutoIE.pas"/>
         <BuildConfiguration Include="Debug">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

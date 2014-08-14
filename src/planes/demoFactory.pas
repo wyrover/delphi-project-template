@@ -20,7 +20,7 @@ var
 implementation
 
 uses
-  fmDemo1, fmRotateFlip01, fmDemo2, fmDemo3, fmExcel;
+  fmDemo1, fmDemo2, fmDemo3, fmExcel;
 
 { TFormFactory }
 
@@ -59,14 +59,14 @@ end;
 
 initialization
   RegisterClass(TDemo1Form);
-  RegisterClass(TFormRotateFlip01);
+  //RegisterClass(TFormRotateFlip01);
   RegisterClass(TExcelForm);
   RegisterClass(TDemo2Form);
   RegisterClass(TDemo3Form);
 
 finalization
   UnRegisterClass(TDemo1Form);
-  UnRegisterClass(TFormRotateFlip01);
+  //UnRegisterClass(TFormRotateFlip01);
   UnRegisterClass(TExcelForm);
   UnRegisterClass(TDemo2Form);
   UnRegisterClass(TDemo3Form);

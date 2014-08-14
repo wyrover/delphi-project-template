@@ -1260,7 +1260,7 @@ implementation
 {$ifdef DELPHI_6_UP}uses variants; {$endif}    // add variant for delphi 6 and upper
 
 {$ifdef COMPILER_14_UP}
-uses System.Variants;
+//uses System.Variants;
 {$endif COMPILER_14_UP}
 
 type
