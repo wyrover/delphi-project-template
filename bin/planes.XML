@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="gb2312"?>
+<app file="E:\rover-self-work\delphi\delphi-project-template\bin\planes.exe">
+  <node caption="倒萨范德法" imageindex="0" classname="">
+    <node caption="testtest2" imageindex="0" classname="TDemo1Form"/>
+    <node caption="FormRotateFlip01" imageindex="0" classname="TFormRotateFlip01"/>
+    <node caption="FormExcel" imageindex="0" classname="TExcelForm"/>
+    <node caption="顽兔" imageindex="0" classname="TDemo2Form"/>
+    <node caption="爱逛街" imageindex="0" classname="TDemo3Form"/>
+  </node>
+</app>
